@@ -11,17 +11,8 @@
         .animate-text span {
             opacity: 0;
             display: inline-block;
-            animation: fadeIn 10s forwards; /* Perpanjang durasi animasi */
+            animation: fadeIn 5s forwards; /* Perpanjang durasi animasi */
             animation-delay: calc(5s * var(--i)); /* Perbesar delay antar huruf */
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
         }
 
         .animate-text span:nth-child(1) {
@@ -151,6 +142,12 @@
         .animate-text span:nth-child(32) {
             --i: 31;
         }
+
+        /* Menambahkan animasi untuk emoji */
+        .animate-text .emoji {
+            animation: fadeIn 1s forwards;
+            animation-delay: calc(0.2s * var(--emoji-i)); /* Delay untuk emoji */
+        }
     </style>
 </head>
 <body>
@@ -164,9 +161,17 @@
     </div>
     <div class="description">
         <span class="animate-text">
-            <span>Aku</span> <span>ada</span> <span>hadiah</span> <span>spesial</span> <span>buat</span> <span>kamu!</span> 💐❤️ <br>
-            <span>Semoga</span> <span>lancar</span> <span>terus</span> <span>yaa</span> <span>puasanya,</span> <span>sehat</span> <span>selalu,</span> <span>dan</span> <span>makin</span> <span>cantik</span> <span>setiap</span> <span>harinya!</span> 😘🌸<br>
-            <span>Selalu</span> <span>bahagia</span> <span>dan</span> <span>penuh</span> <span>cinta</span> <span>yaa!</span> 💕
+            <span>Aku</span> <span>ada</span> <span>hadiah</span> <span>spesial</span> <span>buat</span> <span>kamu!</span> 
+            <span class="emoji" style="--emoji-i: 33;">💐</span>
+            <span class="emoji" style="--emoji-i: 34;">❤️</span> <br>
+            <span>Semoga</span> <span>lancar</span> <span>terus</span> <span>yaa</span> <span>puasanya,</span> 
+            <span>sehat</span> <span>selalu,</span> <span>dan</span> <span>makin</span> <span>cantik</span> <span>setiap</span> 
+            <span>harinya!</span> 
+            <span class="emoji" style="--emoji-i: 35;">😘</span>
+            <span class="emoji" style="--emoji-i: 36;">🌸</span><br>
+            <span>Selalu</span> <span>bahagia</span> <span>dan</span> <span>penuh</span> <span>cinta</span> 
+            <span>yaa!</span> 
+            <span class="emoji" style="--emoji-i: 37;">💕</span>
         </span>
     </div>
     <div class="button">
