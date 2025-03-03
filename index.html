@@ -177,26 +177,6 @@
 
     <!-- Bootstrap JS (optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JavaScript to reveal the text -->
-    <script>
-        window.onload = () => {
-            const text = "Sinta Ayu Amandaa <br>
-                Aku ada kejutan nii buat kamuu<br>
-                    Semoga lancar terus yaa puasanya, sehat selalu, dan makin cantik setiap harinyaa!<br>
-                    Selalu bahagiaa, lancar terus yaa skripsinyaa!";
-            const words = text.split(" ");
-            const description = document.querySelector(".description span");
-            description.innerHTML = ""; // Clear the content
-            
-            let i = 0;
-            const interval = setInterval(() => {
-                description.innerHTML += words[i] + " ";
-                i++;
-                if (i === words.length) clearInterval(interval);
-            }, 200); // Faster interval for smoother effect
-        };
-    </script>
 </body>
 
 </html>
