@@ -41,7 +41,6 @@
 
         .description span {
             line-height: 1.6;
-        
         }
 
         .card {
@@ -89,6 +88,20 @@
             display: none;
         }
 
+        /* Animated Text */
+        .animated-text span {
+            opacity: 0;
+            animation: fadeInLetter 0.1s ease-out forwards;
+            display: inline-block;
+            animation-delay: calc(0.05s * var(--index));
+        }
+
+        @keyframes fadeInLetter {
+            to {
+                opacity: 1;
+            }
+        }
+
         /* Responsive Media Queries */
         @media (max-width: 768px) {
             .greetings {
@@ -117,18 +130,135 @@
         <!-- Card for Description -->
         <div class="card">
             <div class="description">
-                <span>
-                    Sintaa Ayu Amandaaa 🌹❤️ <br>
-                    Aku ada kejutan nii buat kamu! 💐❤️ <br>
-                    Semoga lancar terus yaa puasanya, sehat selalu, dan makin cantik setiap harinya! 😘🌸<br>
-                    Selalu bahagia dan penuh cinta yaa! 💕
+                <span class="animated-text">
+                    <span style="--index: 1;">S</span>
+                    <span style="--index: 2;">i</span>
+                    <span style="--index: 3;">n</span>
+                    <span style="--index: 4;">t</span>
+                    <span style="--index: 5;">a</span>
+                    <span style="--index: 6;"> </span>
+                    <span style="--index: 7;">A</span>
+                    <span style="--index: 8;">y</span>
+                    <span style="--index: 9;">u</span>
+                    <span style="--index: 10;"> </span>
+                    <span style="--index: 11;">A</span>
+                    <span style="--index: 12;">m</span>
+                    <span style="--index: 13;">a</span>
+                    <span style="--index: 14;">n</span>
+                    <span style="--index: 15;">d</span>
+                    <span style="--index: 16;">a</span>
+                    <span style="--index: 17;">a</span>
+                    <br>
+                    <span style="--index: 18;">A</span>
+                    <span style="--index: 19;">k</span>
+                    <span style="--index: 20;">u</span>
+                    <span style="--index: 21;"> </span>
+                    <span style="--index: 22;">a</span>
+                    <span style="--index: 23;">d</span>
+                    <span style="--index: 24;">a</span>
+                    <span style="--index: 25;"> </span>
+                    <span style="--index: 26;">k</span>
+                    <span style="--index: 27;">e</span>
+                    <span style="--index: 28;">j</span>
+                    <span style="--index: 29;">u</span>
+                    <span style="--index: 30;">t</span>
+                    <span style="--index: 31;">a</span>
+                    <span style="--index: 32;">n</span>
+                    <span style="--index: 33;"> </span>
+                    <span style="--index: 34;">n</span>
+                    <span style="--index: 35;">i</span>
+                    <span style="--index: 36;"> </span>
+                    <span style="--index: 37;">b</span>
+                    <span style="--index: 38;">u</span>
+                    <span style="--index: 39;">a</span>
+                    <span style="--index: 40;">t</span>
+                    <span style="--index: 41;"> </span>
+                    <span style="--index: 42;">k</span>
+                    <span style="--index: 43;">a</span>
+                    <span style="--index: 44;">m</span>
+                    <span style="--index: 45;">u</span>
+                    <span style="--index: 46;">!</span>
+                    <br>
+                    <span style="--index: 47;">S</span>
+                    <span style="--index: 48;">e</span>
+                    <span style="--index: 49;">m</span>
+                    <span style="--index: 50;">o</span>
+                    <span style="--index: 51;">g</span>
+                    <span style="--index: 52;">a</span>
+                    <span style="--index: 53;"> </span>
+                    <span style="--index: 54;">l</span>
+                    <span style="--index: 55;">a</span>
+                    <span style="--index: 56;">n</span>
+                    <span style="--index: 57;">c</span>
+                    <span style="--index: 58;">a</span>
+                    <span style="--index: 59;">r</span>
+                    <span style="--index: 60;"> </span>
+                    <span style="--index: 61;">t</span>
+                    <span style="--index: 62;">e</span>
+                    <span style="--index: 63;">r</span>
+                    <span style="--index: 64;">u</span>
+                    <span style="--index: 65;">s</span>
+                    <span style="--index: 66;"> </span>
+                    <span style="--index: 67;">t</span>
+                    <span style="--index: 68;">e</span>
+                    <span style="--index: 69;">s</span>
+                    <span style="--index: 70;">y</span>
+                    <span style="--index: 71;">a</span>
+                    <span style="--index: 72;">,</span>
+                    <span style="--index: 73;"> </span>
+                    <span style="--index: 74;">s</span>
+                    <span style="--index: 75;">e</span>
+                    <span style="--index: 76;">h</span>
+                    <span style="--index: 77;">a</span>
+                    <span style="--index: 78;">t</span>
+                    <span style="--index: 79;"> </span>
+                    <span style="--index: 80;">s</span>
+                    <span style="--index: 81;">a</span>
+                    <span style="--index: 82;">l</span>
+                    <span style="--index: 83;">w</span>
+                    <span style="--index: 84;">a</span>
+                    <span style="--index: 85;">y</span>
+                    <span style="--index: 86;"> </span>
+                    <span style="--index: 87;">d</span>
+                    <span style="--index: 88;">a</span>
+                    <span style="--index: 89;">n</span>
+                    <span style="--index: 90;"> </span>
+                    <span style="--index: 91;">m</span>
+                    <span style="--index: 92;">a</span>
+                    <span style="--index: 93;">k</span>
+                    <span style="--index: 94;">i</span>
+                    <span style="--index: 95;">n</span>
+                    <span style="--index: 96;"> </span>
+                    <span style="--index: 97;">c</span>
+                    <span style="--index: 98;">a</span>
+                    <span style="--index: 99;">n</span>
+                    <span style="--index: 100;">t</span>
+                    <span style="--index: 101;">i</span>
+                    <span style="--index: 102;">k</span>
+                    <span style="--index: 103;"> </span>
+                    <span style="--index: 104;">s</span>
+                    <span style="--index: 105;">e</span>
+                    <span style="--index: 106;">t</span>
+                    <span style="--index: 107;">i</span>
+                    <span style="--index: 108;">a</span>
+                    <span style="--index: 109;">p</span>
+                    <span style="--index: 110;"> </span>
+                    <span style="--index: 111;">h</span>
+                    <span style="--index: 112;">a</span>
+                    <span style="--index: 113;">r</span>
+                    <span style="--index: 114;">i</span>
+                    <span style="--index: 115;">n</span>
+                    <span style="--index: 116;">y</span>
+                    <span style="--index: 117;">a</span>
+                    <span style="--index: 118;">!</span>
                 </span>
             </div>
         </div>
+
         <!-- Button Section -->
         <div class="button">
             <button>
-                <a href="flower.html" style="color: white; text-decoration: none;">Tekan ini kalo maww kejutan manis hehe 💕</a>
+                <a href="flower.html" style="color: white; text-decoration: none;">pencet ini kalo maww kejutan manis hehe 💕</a>
             </button>
         </div>
 
