@@ -189,27 +189,29 @@
     <script>
         // Function to display greeting based on the time of day
         function setGreetingAndTime() {
-            var today = new Date();
-            var hour = today.getHours();
-            var greeting;
-            var dateTime = today.toLocaleString();
+    var today = new Date();
+    var hour = today.getHours();
+    var greeting;
+    var dateTime = today.toLocaleString();
 
-            // Determine greeting based on time of day
-            if (hour < 12) {
-                greeting = "Selamat Pagi Cantiiikk💕";
-            } else if (hour < 18) {
-                greeting = "Selamat Siang Cantiiikk💕";
-            } else {
-                greeting = "Selamat Malam Cantiiikk💕";
-            }
+    // Determine greeting based on new time intervals
+    if (hour < 12) {
+        greeting = "Selamat Pagi Cantiiikk💕";
+    } else if (hour < 15) {
+        greeting = "Selamat Siang Cantiiikk💕";
+    } else if (hour < 18) {
+        greeting = "Selamat Sore Cantiiikk💕";
+    } else {
+        greeting = "Selamat Malam Cantiiikk💕";
+    }
 
-            // Display the greeting and date/time
-            document.getElementById("time-greeting").innerHTML = greeting;
-            document.getElementById("date-time").innerHTML = dateTime;
-        }
+    // Display the greeting and date/time
+    document.getElementById("time-greeting").innerHTML = greeting;
+    document.getElementById("date-time").innerHTML = dateTime;
+}
 
-        // Call the function when the page loads
-        window.onload = setGreetingAndTime;
+// Call the function when the page loads
+window.onload = setGreetingAndTime;
     </script>
 </body>
 
