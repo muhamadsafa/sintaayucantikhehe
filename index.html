@@ -124,6 +124,12 @@
             }
         }
 
+        /* New styles for the greeting container */
+        #greeting-container {
+            font-size: 1rem; /* Smaller font size for time and date */
+            color: #666; /* Lighter color for time and date */
+        }
+
         /* Responsive Media Queries */
         @media (max-width: 768px) {
             .greetings {
@@ -148,13 +154,9 @@
         <!-- Ucapan Berdasarkan Waktu -->
         <div class="greetings">
             <span id="time-greeting"></span><br>
-            <span id="date-time"></span>
-            <!-- Greetings Section -->
-        <div class="greetings">
-            <span>❤💐💕🌹❤</span>
-        </div>
-
-
+            <div id="greeting-container">
+                <span id="date-time"></span>
+            </div>
         </div>
 
         <!-- Card for Description -->
